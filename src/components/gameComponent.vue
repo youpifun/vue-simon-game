@@ -50,7 +50,8 @@ export default {
     },
         methods: {
             getRandomTile: function() {
-                let curTileNumber = Math.floor(Math.random() * (this.amountOfColors-1))+1;
+                let curTileNumber = Math.floor(Math.random() * (this.amountOfColors))+1;
+                console.log(curTileNumber)
                 return curTileNumber;
             },  
             ClearVars: function() {
